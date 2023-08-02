@@ -1,11 +1,17 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useNavigate, Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { postDetail } from '../modules/boardReducer';
  
 function BoardList() {
     const navigate = useNavigate();
     const { postData } = useSelector(state => state.boardReducer);
     const { lastId } = useSelector(state => state.boardReducer);
+
+    const dispatch = useDispatch();
+    const selectPost = (id) => {
+        dispatch(postDetail(id));
+    }
     return(
         <div>
             BoardList
@@ -23,8 +29,8 @@ function BoardList() {
                             postData.map(item => (
                                 item.id !== '' &&
                                 <tr key={item.id}> 
-                                    <td>{item.id}</td>
-                                    <td>{item.title}</td>
+                                    <td onClick={()=> selectPost(item.id)}><Link to='/BoardDetail'>{item.id}</Link></td>
+                                    <td onClick={()=> selectPost(item.id)}><Link to='/BoardDetail'>{item.title}</Link></td>
                                 </tr>
                             )) :
                             // 게시글 없는 경우
