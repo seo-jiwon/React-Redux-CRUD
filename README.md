@@ -36,6 +36,7 @@
     ```
     const TYPE_SAVE = 'POST_SAVE';
 
+    type: TYPE_SAVE,
     postData: [
         {
             id: '',
@@ -53,3 +54,24 @@
   ```
   const rootReducer = combineReducers({ boardReducer });
   ```
+
+0802
+- BoardDetail.js, BoardList.js Update
+  - BoardDetail.js
+    - useSelector() 사용
+  - BoardList.js
+    - useDispatch() 사용
+    - react-router-dom 의 Link Component 추가
+- boardReducer Update
+  - boardReducer.js
+    - 게시글 상세 관련 Action Type / Action Function / Reducer 소스코드 작성
+    ```
+    const TYPE_DETAIL = 'POST_DETAIL';
+
+    type: TYPE_DETAIL,
+    postData: {
+        id: id,
+    }
+
+    case TYPE_DETAIL:
+    ```  
