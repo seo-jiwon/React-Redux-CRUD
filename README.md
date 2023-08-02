@@ -11,10 +11,45 @@
 - components / modules  
   - BoardList.js, BoardPost.js, BoardDetail.js
   - rootReducer.js
-- reducer store
+- reducer / store
   - index.js
   ```
   // import { configureStore } from '@reduxjs/toolkit';
   // const store = configureStore({ reducer: rootReducer });
       {/* <Provider store={store}> */}    {/* </Provider> */}
+  ```
+
+0801
+- store 연동 위한 Provider Component 주석 제거
+  - index.js
+  ```
+  <Provider store={store}> </Provider>
+  ```
+- BoardList.js, BoardPost.js Update
+  - BoardList.js
+    - useSelector() 사용
+  - BoardPost.js
+    - useDispatch() 사용
+- boardReducer add
+  - boardReducer.js
+    - 게시글 작성 관련 Action Type / Action Function / Initial State / Reducer 소스코드 작성
+    ```
+    const TYPE_SAVE = 'POST_SAVE';
+
+    postData: [
+        {
+            id: '',
+            title: '',
+            content: '',
+        }
+    ]
+
+    export default function boardReducer(state = initialState, action){
+    switch(action.type) {
+        case TYPE_SAVE:
+    ``` 
+- combineReducers
+  - rootReducer.js
+  ```
+  const rootReducer = combineReducers({ boardReducer });
   ```
