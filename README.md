@@ -27,9 +27,11 @@
   ```
 - BoardList.js, BoardPost.js Update
   - BoardList.js
-    - useSelector() 사용
+    - 게시글 목록 기능
+      - useSelector() 사용
   - BoardPost.js
-    - useDispatch() 사용
+    - 게시글 작성 기능
+      - useDispatch() 사용
 - boardReducer add
   - boardReducer.js
     - 게시글 작성 관련 Action Type / Action Function / Initial State / Reducer 소스코드 작성
@@ -58,7 +60,8 @@
 0802
 - BoardDetail.js, BoardList.js Update
   - BoardDetail.js
-    - useSelector() 사용
+    - 게시글 상세보기 기능
+      - useSelector() 사용
   - BoardList.js
     - useDispatch() 사용
     - react-router-dom 의 Link Component 추가
@@ -75,3 +78,29 @@
 
     case TYPE_DETAIL:
     ```  
+
+0805
+- BoardDetail.js Update
+  - 게시글 수정 및 삭제 기능
+    - onChange(), onRemove(), useDispatch(), useState() 사용
+- boardReducer.js
+  - Save, Detail 관련 액션 함수명 수정
+  - Edit 및 Remove 관련 Action Type / Action Function / Reducer 소스코드 작성
+  ```
+  const TYPE_EDIT = 'POST_EDIT';
+  const TYPE_REMOVE = 'POST_REMOVE';
+
+  type: TYPE_EDIT,
+    postData: {
+        id: postData.id,
+        title: postData.title,
+        content: postData.content,
+    }
+  type: TYPE_REMOVE,
+    postData: {
+        id: id,
+    }
+
+  case TYPE_EDIT:
+  case TYPE_REMOVE:
+  ```
