@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { editPost } from '../modules/boardReducer';
+import { editPost, removePost } from '../modules/boardReducer';
  
 function BoardDetail() {
     const dispatch = useDispatch();
@@ -33,6 +33,13 @@ function BoardDetail() {
         navigate('/');
     }
 
+    const onRemove = () => {
+        dispatch(removePost(selectPostData.id));
+        setTitle('');
+        setContent('');
+        navigate('/');
+    }
+
     return(
         <div>
             BoardDetail
@@ -49,7 +56,7 @@ function BoardDetail() {
                 </tbody>
             </table>
             <button onClick={onChange}>수정</button>
-            <button>삭제</button>
+            <button onClick={onRemove}>삭제</button>
         </div>
     )
 }
