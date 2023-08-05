@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { postSave } from '../modules/boardReducer';
+import { savePost } from '../modules/boardReducer';
 
 function BoardPost() {
     const navigate = useNavigate();
@@ -17,7 +17,7 @@ function BoardPost() {
             title: title,
             content: content,
         }
-        dispatch(postSave(postData));
+        dispatch(savePost(postData));
         setTitle('');
         setContent('');
         // console.log(postData);

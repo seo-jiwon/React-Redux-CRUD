@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { postDetail } from '../modules/boardReducer';
+import { detailPost } from '../modules/boardReducer';
  
 function BoardList() {
     const navigate = useNavigate();
@@ -10,7 +10,7 @@ function BoardList() {
 
     const dispatch = useDispatch();
     const selectPost = (id) => {
-        dispatch(postDetail(id));
+        dispatch(detailPost(id));
     }
     return(
         <div>

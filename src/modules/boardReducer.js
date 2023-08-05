@@ -1,9 +1,10 @@
 // Action Type
 const TYPE_SAVE = 'POST_SAVE';
 const TYPE_DETAIL = 'POST_DETAIL';
+const TYPE_EDIT = 'POST_EDIT';
 
 // Action Function
-export const postSave = (postData) => ({
+export const savePost = (postData) => ({
     type: TYPE_SAVE,
     postData: {
         id: postData.id,
@@ -13,10 +14,20 @@ export const postSave = (postData) => ({
 })
 
 // Action Function
-export const postDetail = (id) => ({
+export const detailPost = (id) => ({
     type: TYPE_DETAIL,
     postData: {
         id: id,
+    }
+})
+
+// Action Function
+export const editPost = (postData) => ({
+    type: TYPE_EDIT,
+    postData: {
+        id: postData.id,
+        title: postData.title,
+        content: postData.content,
     }
 })
 
@@ -45,11 +56,17 @@ export default function boardReducer(state = initialState, action){
                     id: state.lastId + 1,
                 })
             }
-            case TYPE_DETAIL:
-                return {
-                    ...state,
-                    selectPostData: state.postData.find(item => item.id === action.postData.id)
-                }
+        case TYPE_DETAIL:
+            return {
+                ...state,
+                selectPostData: state.postData.find(item => item.id === action.postData.id)
+            }
+        case TYPE_EDIT:
+            return {
+                ...state,
+                postData: state.postData.map(item => item.id === action.postData.id ? {...action.postData} : item),
+                selectPostData: {}
+            }
         default:
             return state
     }
