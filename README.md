@@ -104,3 +104,19 @@
   case TYPE_EDIT:
   case TYPE_REMOVE:
   ```
+
+0807
+- Body.css, Header.css, Footer.css 
+  - Footer 화면 고정
+    - 100vh - ( Header height + Footer height )
+    ```
+    height:calc(100vh - 300px);
+    ```
+  - BoardList.css
+    - Body 디자인 수정 ( 테이블 )
+  - BoardList.js, BoardPost.js, BoardDetail.js Update
+    - Header, Footer 추가
+    - Body Size 고정
+      ```
+      <div style={{ width: "100vw", height: "100vh" }}>
+      ```
