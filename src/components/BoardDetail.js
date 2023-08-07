@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { editPost, removePost } from '../modules/boardReducer';
- 
+import '../css/Body.css';
+import Header from './Header';
+import Footer from './Footer'; 
+
 function BoardDetail() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -41,22 +44,30 @@ function BoardDetail() {
     }
 
     return(
-        <div>
-            BoardDetail
-            <table border='1px'>
-                <thead>
-                    <tr>
-                        <th><input type='text' onChange={handleTitle} value={title} /></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><textarea onChange={handleContent} value={content} /></td>
-                    </tr>
-                </tbody>
-            </table>
-            <button onClick={onChange}>수정</button>
-            <button onClick={onRemove}>삭제</button>
+        <div style={{ width: "100vw", height: "100vh" }}>
+            <Header />
+            <div id='bodyDiv'>
+                <h2 id='boardDetailTitleDiv'>
+                    BoardDetail
+                </h2>
+                <div id='boardDetailDiv'>
+                    <table border='1px'>
+                        <thead>
+                            <tr>
+                                <th><input type='text' onChange={handleTitle} value={title} /></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><textarea onChange={handleContent} value={content} /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button onClick={onChange}>수정</button>
+                    <button onClick={onRemove}>삭제</button>
+                </div>
+            </div>
+            <Footer />
         </div>
     )
 }
