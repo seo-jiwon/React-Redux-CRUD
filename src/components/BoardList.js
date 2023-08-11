@@ -23,7 +23,7 @@ function BoardList() {
                 <h2 id='boardListTiteDiv'>
                     BoardList
                 </h2>
-                <button id='boardPostBtn' onClick={()=>navigate('/BoardPost')}>글 작성</button>
+                <button id='boardListBtn' onClick={()=>navigate('/BoardPost')}>글 작성</button>
                 <div id='boardListDiv'>
                     <br />
                     <table id='boardListTable'>

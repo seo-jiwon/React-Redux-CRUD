@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { editPost, removePost } from '../modules/boardReducer';
 import '../css/Body.css';
+import '../css/BoardDetail.css';
 import Header from './Header';
 import Footer from './Footer'; 
 
@@ -51,20 +52,24 @@ function BoardDetail() {
                     BoardDetail
                 </h2>
                 <div id='boardDetailDiv'>
-                    <table border='1px'>
+                    <table>
                         <thead>
                             <tr>
-                                <th><input type='text' onChange={handleTitle} value={title} /></th>
+                                <th><input id='boardDetailTitle' type='text' onChange={handleTitle} value={title} /></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><textarea onChange={handleContent} value={content} /></td>
+                                <td><textarea id='boardDetailContent' onChange={handleContent} value={content} /></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id='boardDetailEditBtn' onClick={onChange}>수정</button>
+                                    <button id='boardDetailRemoveBtn' onClick={onRemove}>삭제</button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
-                    <button onClick={onChange}>수정</button>
-                    <button onClick={onRemove}>삭제</button>
                 </div>
             </div>
             <Footer />

@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { savePost } from '../modules/boardReducer';
 import '../css/Body.css';
+import '../css/BoardPost.css';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -44,21 +45,20 @@ function BoardPost() {
                 </h2>
                 <div id='boardPostDiv'>
                     <form onSubmit={postSubmit}>
-                        <table border='1px'>
+                        <table>
                             <thead>
                                 <tr>
-                                    <th><input type='text' onChange={handleTitle} value={title} placeholder='제 목' /></th>
+                                    <th><input id='boardPostTitle' type='text' onChange={handleTitle} value={title} placeholder='제 목' /></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><input type='text' onChange={handleContent} value={content} placeholder='내 용' /></td>
+                                    <td><input id='boardPostContent' type='text' onChange={handleContent} value={content} placeholder='내 용' /></td>
                                 </tr>
                             </tbody>
                         </table>
                         <br/>
-                        <button type='submit'>확인</button>
-                        {/* <button onClick={()=>navigate('/')}>확인</button> */}
+                        <button id='boardPostBtn' type='submit'>확인</button>
                     </form>
                 </div>
             </div>

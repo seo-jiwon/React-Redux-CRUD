@@ -1,18 +1,15 @@
-#boardPostBtn {
+#boardListBtn {
     font-size: 15px;
     background-color: #4A4A4A;
     color: white;
     border-radius: 5%;
     border-width: 0;
     padding: 0.5%;
-}
-
-#boardPostBtn {
     margin-left: 70%;
     margin-bottom: 1%;
 }
 
-#boardPostBtn:hover {
+#boardListBtn:hover {
     color: rgb(150, 150, 150);
 }
 
