@@ -120,3 +120,9 @@
       ```
       <div style={{ width: "100vw", height: "100vh" }}>
       ```
+
+0811
+- BoardList.js, BoardPost.js, BoardDetail.js Update
+  - id값 추가
+- BoardList.css, BoardPost.css, BoardDetail.css
+  - 디자인 수정
