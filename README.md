@@ -2,10 +2,61 @@
 > 2023-07-30 ~
 
 <div align="center">
-<img width="995" alt="image" src="https://user-images.githubusercontent.com/59152019/224705181-3bd2829d-63e9-4e95-853d-c016a5533a32.png">
+<img width="995" alt="image" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/d35191f6-751e-4735-afff-827f6fce636a">
 </div>
 <br/>
 
+<b>Fun Daily는 Redux 학습을 위한 게시글 목록, 작성, 수정, 삭제 웹 서비스</b>
+<br/>
+<br/>
+
+## :link: 실행 방법
+
+- 프로그램 실행
+```
+$ npm install
+``` 
+```
+$ npm start
+``` 
+<br/>
+
+## :file_folder: 개발 환경
+<img src="https://img.shields.io/badge/Visual Studio Code-007ACC??style=flat-square&logo=Visual Studio Code&logoColor=white"/>
+
+<br/>
+
+## :hammer: 기술 스택
+<img src="https://img.shields.io/badge/HTML5-E34F26??style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6??style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E??style=flat-square&logo=JavaScript&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB??style=flat-square&logo=React&logoColor=white"/> <img src="https://img.shields.io/badge/Redux-764ABC??style=flat-square&logo=Redux&logoColor=white"/> <img src="https://img.shields.io/badge/Node.js-339933??style=flat-square&logo=Node.js&logoColor=white"/>
+
+<br/>
+
+## :eyes: 기능 설명
+기능|게시글 목록 페이지(메인페이지)|
+|--|--|
+|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/1db583f1-18a6-4b58-892e-ab56e230ab71">|
+|설명|게시글 목록을 확인하는 메인페이지이다.|
+<br/>
+
+기능|게시글 작성 페이지|
+|--|--|
+|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/1f4f5e7a-9768-4004-96c6-47eb3424360a">|
+|설명|게시글 작성 페이지이다.|
+<br/>
+
+기능|게시글 상세 페이지|
+|--|--|
+|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/26d2378b-751e-4639-87b8-0a56c9f16e52">|
+|설명|게시글 상세 페이지이다. 게시글을 수정하고 삭제할 수 있다.|
+<br/>
+
+기능|게시글 작성 / 수정 / 삭제|
+|--|--|
+|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/c81317cf-b0d2-427e-b19e-0c733a79ac4e">|
+|설명|게시글을 작성, 수정, 삭제할 수 있다.|
+<br/>
+
+## :clipboard: 프로젝트 기록
 0731
 - React-Router-Dom
 - components / modules  
