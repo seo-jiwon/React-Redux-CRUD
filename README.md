@@ -2,7 +2,7 @@
 > 2023-07-30 ~
 
 <div align="center">
-<img width="995" alt="image" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/d35191f6-751e-4735-afff-827f6fce636a">
+<img width="995" alt="image" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/7afe3c4e-34cb-4a64-ae00-684a4949c54c.png">
 </div>
 <br/>
 
@@ -34,25 +34,25 @@ $ npm start
 ## :eyes: 기능 설명
 기능|게시글 목록 페이지(메인페이지)|
 |--|--|
-|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/1db583f1-18a6-4b58-892e-ab56e230ab71">|
+|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/7afe3c4e-34cb-4a64-ae00-684a4949c54c.png">|
 |설명|게시글 목록을 확인하는 메인페이지이다.|
 <br/>
 
 기능|게시글 작성 페이지|
 |--|--|
-|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/1f4f5e7a-9768-4004-96c6-47eb3424360a">|
+|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/7cbaa628-2957-4377-8dcf-3dfd24d0ec79.png">|
 |설명|게시글 작성 페이지이다.|
 <br/>
 
 기능|게시글 상세 페이지|
 |--|--|
-|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/26d2378b-751e-4639-87b8-0a56c9f16e52">|
+|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/f72793c1-d45b-482b-8cbd-4fa698a97198.png">|
 |설명|게시글 상세 페이지이다. 게시글을 수정하고 삭제할 수 있다.|
 <br/>
 
 기능|게시글 작성 / 수정 / 삭제|
 |--|--|
-|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/c81317cf-b0d2-427e-b19e-0c733a79ac4e">|
+|화면|<p align="center"><img width="960" height="770" src="https://github.com/seo-jiwon/React-Redux-CRUD/assets/59152019/a29439de-3454-4485-8eae-eaa61bb6b7e1.gif">|
 |설명|게시글을 작성, 수정, 삭제할 수 있다.|
 <br/>
 
